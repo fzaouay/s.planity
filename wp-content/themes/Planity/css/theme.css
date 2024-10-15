@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet');
+
+body * {
+    font-family: 'Syne', sans-serif;
+}
+
+
+/* Stili per il menu di navigazione */
+.main-navigation {
+    text-align: right; /* Allinea il menu a destra */
+}
+
+.custom-primary-menu {
+    list-style-type: none; /* Rimuove i punti dell'elenco */
+    padding: 0; /* Rimuove il padding */
+    margin: 0; /* Rimuove il margine */
+}
+
+.custom-primary-menu li {
+    display: inline-block; /* Menu orizzontale */
+    margin-left: 20px; /* Margine tra le voci */
+}
+
+/* Stili per i link del menu */
+.custom-primary-menu li a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #333; /* Colore del testo */
+    padding: 10px 15px; /* Padding per le voci */
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+/* Stili specifici per il link "Commander" */
+.custom-primary-menu li a[href*="commander"] {
+    text-align: center;
+    background-color: #DC9F96; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    width: 200px;
+
+}
+
+/* Effetto hover per il link "Commander" */
+.custom-primary-menu li a[href*="commander"]:hover {
+    background-color: #C02E44; /* Colore di sfondo al passaggio del mouse */
+    color: white;
+}
+
+/* Effetto hover per gli altri link */
+.custom-primary-menu li a:hover {
+    background-color: #eee; /* Colore di sfondo al passaggio del mouse per gli altri link */
+}
+
+.site-footer {
+    display: flex; /* Attiva Flexbox */
+    justify-content: center; /* Centra orizzontalmente */ 
+    align-items: center; /* Centra verticalmente */
+    height: 50px !important; /* Altezza del footer */
+    background-color: white !important;
+    padding-bottom: 0px !important;
+    
+}
+
+.site-footer > .col-full {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.site-footer .col-full .site-info {
+    margin: 0; /* Elimina eventuali margini indesiderati */
+    color: #000;
+    
+}
+
+
+
+.site-header {
+    display: flex; /* Usa Flexbox per disporre gli elementi sulla stessa riga */
+    justify-content: space-between; /* Spazia gli elementi, mettendo il logo a sinistra e il menu a destra */
+    align-items: center; /* Allinea verticalmente logo e menu */
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.site-branding {
+    text-align: left;
+    margin-bottom: 0 !important;
+}
+
+.col-full {
+    max-width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+    margin-left: 5px !important;
+}
+
+.site-content .col-full {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    
+}
+
+.site-main {
+    margin: 0;
+}
+
+.site-main > .hentry {
+    margin: 0 0 0;
+  }
+
+main .elementor-element {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+body:not(.rtl) .elementor-8 .elementor-element.elementor-element-05aa001 {
+    left: 19%;
+}
+
+body:not(.rtl) .elementor-8 .elementor-element.elementor-element-7bfb451 {
+    left: 48%;
+}
+
+main .elementor-element .elementor-element-4154153 {
+    border-radius: 20px;
+}
+
+.col-full > .content-area {
+    margin-bottom: 0;
+}
+
+.content-area > .site-main {
+    margin-bottom: 0;
+}
+
+.e-con-inner .elementor-widget-container .wp-image-44 {
+    width: 100% !important; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: auto; /* Mantiene le proporzioni originali dell'immagine */
+    display: block; /* Evita spazi bianchi sotto l'immagine */
+    margin: 0; /* Rimuovi margini esterni */
+    padding: 0; /* Rimuovi padding */
+}
+
+.e-con > .e-con-inner {
+    max-width: none !important; /* Disabilita il limite di larghezza */
+    width: 100% !important; /* Imposta la larghezza al 100% della finestra del browser */
+    margin: 0 !important; /* Elimina eventuali margini che potrebbero limitare l'immagine */
+    padding: 0 !important; /* Rimuove padding */
+}
+
+.edit-link {
+    display: none;
+}
+
+.elementor-8 .elementor-element.elementor-element-eae875b .elementor-heading-title {
+    color: #3B8E46;
+    font-family: "Syne", Sans-serif;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 45px;
+    padding-top: 80px;
+}
+
+
+.elementor-8 .elementor-element.elementor-element-c8cf58d > .elementor-widget-container {
+    background-image: url("http://localhost/Planity/wp-content/uploads/2024/10/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png");
+    width: 393px;
+    height: 262px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+}
+
+.elementor-8 .elementor-element.elementor-element-6fbeea6 > .elementor-widget-container {
+    background-image: url("http://localhost/Planity/wp-content/uploads/2024/10/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png");
+    width: 393px;
+    height: 262px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+}
+
+.elementor-8 .elementor-element.elementor-element-1d0a3f2 > .elementor-widget-container {
+    background-image: url("http://localhost/Planity/wp-content/uploads/2024/10/estudio-bloom-tOitjphtIXU-unsplash-1.png");
+    width: 393px;
+    height: 262px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+  }
+
+
+.elementor-8 .elementor-element.elementor-element-910bcf7 > .elementor-widget-container{
+    background-image: url("http://localhost/Planity/wp-content/uploads/2024/10/estudio-bloom-tOitjphtIXU-unsplash-1.png");
+    width: 393px;
+    height: 262px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+}
+
+
+.e-con-inner .elementor-widget-container .wp-image-44 {
+    background-color: #fff !important;
+  }
+
+
+/* NOUS RENCONTRER */
+
+.elementor-13 .elementor-element.elementor-element-1a02b06 {
+    --display: flex;
+    --background-transition: 0.3s;
+    --margin-top: 0px !important;
+    --margin-bottom: 0px;
+    --margin-left: 0px;
+    --margin-right: 0px;
+}
+
+.elementor-13 .elementor-element.elementor-element-363373f > .e-con.e-flex > .e-con-inner {
+    border-bottom-left-radius: 15px;
+}
+
+
+
+/* Form */ 
+div.wpforms-container-full .wpforms-form .wpforms-head-container {
+    margin: 0;
+    padding: 0 0 35px 0;
+    text-align: center;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-title {
+    font-weight: 700;
+    line-height: 29px;
+    font-size: 30px;
+    color: var(--wpforms-label-color);
+}
+
+
+
+.wpforms-submit-container {
+    text-align: center;
+}
+
+.e-con-inner .elementor-widget-container .wp-image-44 {
+    background-color: #ECE2DA;
+}
+
+.elementor-13 .elementor-element.elementor-element-389c753 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* COMMANDER */
+
+.wpforms-container .wpforms-container-full .wpforms-render-modern{
+    margin-top: 0px !important;
+}
+
+
+.wpforms-container .wpforms-field.wpforms-one-half.wpforms-first {
+    border-right: solid #fff !important;
+}
+
+
+div.wpforms-container-full .wpforms-form .wpforms-submit-container{
+    margin-top: 20px !important;
+    padding-top: 30px;
+}
+
+div.wpforms-container-full button[type="submit"]:not(:hover):not(:active){
+    width: 198px;
+    height: 55px;
+}
+
+
+/* Media */
+@media (min-width: 768px) and (max-width: 1024px){
+    
+}
+
+
+
+
