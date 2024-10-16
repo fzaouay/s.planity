@@ -113,13 +113,18 @@ main .elementor-element {
 
 }
 
-body:not(.rtl) .elementor-8 .elementor-element.elementor-element-05aa001 {
-    left: 19%;
+body:not(.rtl) .elementor-9 .elementor-element.elementor-element-d6579f0{
+    top: 20%;
 }
 
-body:not(.rtl) .elementor-8 .elementor-element.elementor-element-7bfb451 {
-    left: 48%;
+body:not(.rtl) .elementor-9 .elementor-element.elementor-element-138f50b{
+    top: 20%;
 }
+
+body:not(.rtl) .elementor-72 .elementor-element.elementor-element-de808ae {
+    right: 70% !important;
+    bottom: 10%;
+  }
 
 main .elementor-element .elementor-element-4154153 {
     border-radius: 20px;
@@ -254,6 +259,9 @@ div.wpforms-container-full .wpforms-form .wpforms-title {
 
 /* COMMANDER */
 
+.wpforms-container .wpforms-form .wpforms-field-label{
+    color: white;
+}
 .wpforms-container .wpforms-container-full .wpforms-render-modern{
     margin-top: 0px !important;
 }
@@ -277,9 +285,95 @@ div.wpforms-container-full button[type="submit"]:not(:hover):not(:active){
 
 /* Media */
 @media (min-width: 768px) and (max-width: 1024px){
-    
+    .custom-primary-menu li:last-child {
+        margin-left: 0px !important; /* Sposta l'ultimo elemento verso destra */
+        padding-right: 0px; /* Rimuovi eventuali padding a destra */
+        border: none; /* Assicurati che non ci siano bordi aggiuntivi */
+    }
+
+
+
+
+/* page commander */
+
+div.wpforms-container-full button[type="submit"]:not(:hover):not(:active){
+    width: 120px;
+    height: 55px;
+    font-size: 13px;
+}
+
+.wpforms-container .wpforms-form .wpforms-field-label{
+    font-size: 15px;
+}
+
 }
 
 
+
+
+
+@media only screen and (max-width: 768px){
+    /* header */
+    .site-branding{
+        width: 100px !important;
+    }
+    .site-header{
+        padding-bottom: 0px !important;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Trasforma il menu in verticale */
+        list-style: none;
+        background-color: #fff; /* Colore di sfondo del menu mobile */
+        position: absolute;
+        top: 50px; /* Posiziona il menu sotto il pulsante */
+        right: 0;
+        width: 100%;
+        z-index: 1000; /* Portalo sopra gli altri elementi */
+    }
+
+    .custom-primary-menu li a[href*="commander"]{
+        background-color: white;
+        color: #000;
+    }
+
+    .main-navigation.toggled ul[aria-expanded="true"]{
+        width: 150px;
+    }
+
+    .custom-primary-menu li {
+        margin-left: 0px;
+    }
+
+    .main-navigation ul li a {
+        align-self: center;
+    }
+
+
+
+    /* page commander */
+    .elementor-125 .elementor-element.elementor-element-29c65b6.elementor-element{
+        display: none; /* titre Livraison */
+    }
+
+    .wpforms-field {
+        display: block !important; /* Cambia la visualizzazione dei campi da inline-block a block */
+        width: 100%; /* Ogni campo prenderà la larghezza completa */
+        margin-right: 0; /* Rimuove il margine a destra */
+        margin-bottom: 15px; /* Aumenta il margine inferiore tra i campi */
+      }
+    .wpforms-one-half {
+        width: 100% !important;  /* Quando lo schermo è piccolo, i campi diventano a piena larghezza */
+        margin-right: 0; /* Rimuove il margine a destra */
+      }
+
+      .wpforms-container .wpforms-field.wpforms-one-half.wpforms-first {
+        border-right: none !important;
+    }
+
+    .wpforms-container .wpforms-field.wpforms-one-half{
+        margin-left: 0 !important;
+    }
+}
 
 
