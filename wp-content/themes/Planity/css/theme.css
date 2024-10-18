@@ -242,14 +242,13 @@ div.wpforms-container-full .wpforms-form .wpforms-title {
     text-align: center;
 }
 
+div.wpforms-container-full button[type="submit"]{
+    width: 50% !important;
+}
 
 
 /* Form */ 
-div.wpforms-container-full .wpforms-form .wpforms-head-container {
-    margin: 0;
-    padding: 0 0 35px 0;
-    text-align: center;
-}
+
 
 div.wpforms-container-full .wpforms-form .wpforms-title {
     font-weight: 700;
@@ -264,9 +263,7 @@ div.wpforms-container-full .wpforms-form .wpforms-title {
     text-align: center;
 }
 
-.e-con-inner .elementor-widget-container .wp-image-44 {
-    background-color: #ECE2DA;
-}
+
 
 .elementor-13 .elementor-element.elementor-element-389c753 {
     padding-top: 0px;
@@ -367,6 +364,27 @@ div.wpforms-container-full button[type="submit"]:not(:hover):not(:active){
     }
 
 
+
+    /* Page nous rencontrer */
+
+    /* form */
+    div.wpforms-container-full .wpforms-form .wpforms-title{
+        font-size: 20px;
+    }
+
+    div.wpforms-container .wpforms-form .wpforms-field{
+        width: 100% !important;
+        
+    }
+
+    .wpforms-container .wpforms-form .wpforms-field-label{
+        font-size: 14px !important;
+    }
+
+    div.wpforms-container-full button[type="submit"]{
+        width: 150px !important;
+    }
+    
 
     /* page commander */
     .elementor-125 .elementor-element.elementor-element-29c65b6.elementor-element{
