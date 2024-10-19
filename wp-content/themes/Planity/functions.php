@@ -109,6 +109,3 @@ function custom_storefront_credit() {
 }
 
 
-/* functions form "COMMANDER" */
-
-
