@@ -2,44 +2,42 @@
 
 body * {
     font-family: 'Syne', sans-serif;
+    width: 100%;
 }
 
 
 /* Stili per il menu di navigazione */
-.main-navigation {
-    text-align: right; /* Allinea il menu a destra */
+
+
+.main-navigation ul.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
 }
 
-.custom-primary-menu {
-    list-style-type: none; /* Rimuove i punti dell'elenco */
-    padding: 0; /* Rimuove il padding */
-    margin: 0; /* Rimuove il margine */
-}
 
-.custom-primary-menu li {
-    display: inline-block; /* Menu orizzontale */
-    margin-left: 20px; /* Margine tra le voci */
+.main-navigation ul li {
+    margin: 0px;
+    text-align: center !important;
+    width: 200px;
 }
 
 /* Stili per i link del menu */
 .custom-primary-menu li a {
     text-decoration: none; /* Rimuove la sottolineatura */
     color: #333; /* Colore del testo */
-    padding: 10px 15px; /* Padding per le voci */
     transition: background-color 0.3s; /* Transizione per il colore di sfondo */
 }
 
 /* Stili specifici per il link "Commander" */
-.custom-primary-menu li a[href*="commander"] {
-    text-align: center;
+.custom-primary-menu li [href*="commander"] {
     background-color: #DC9F96; /* Colore di sfondo */
     color: white; /* Colore del testo */
-    width: 200px;
 
 }
 
 /* Effetto hover per il link "Commander" */
-.custom-primary-menu li a[href*="commander"]:hover {
+.custom-primary-menu li [href*="commander"]:hover {
     background-color: #C02E44; /* Colore di sfondo al passaggio del mouse */
     color: white;
 }
@@ -53,6 +51,7 @@ body * {
     display: flex; /* Attiva Flexbox */
     justify-content: center; /* Centra orizzontalmente */ 
     align-items: center; /* Centra verticalmente */
+    width: 100%;
     height: 50px !important; /* Altezza del footer */
     background-color: white !important;
     padding-bottom: 0px !important;
@@ -66,8 +65,11 @@ body * {
 
 .site-footer .col-full .site-info {
     margin: 0; /* Elimina eventuali margini indesiderati */
-    color: #000;
-    
+    color: #000;    
+}
+
+.site-info {
+    text-align: center;
 }
 
 
@@ -105,7 +107,7 @@ body * {
 
 .site-main > .hentry {
     margin: 0 0 0;
-  }
+}
 
 main .elementor-element {
     padding-left: 0 !important;
@@ -307,12 +309,24 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
 
 /* Media */
 @media (min-width: 768px) and (max-width: 1024px){
-    .custom-primary-menu li:last-child {
-        margin-left: 0px !important; /* Sposta l'ultimo elemento verso destra */
-        padding-right: 0px; /* Rimuovi eventuali padding a destra */
-        border: none; /* Assicurati che non ci siano bordi aggiuntivi */
+    .site-branding{
+        width: 200px !important;
     }
 
+
+    .main-navigation ul li {
+        width: 150px;
+    }
+
+    .main-navigation ul.nav-menu > li > a {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-navigation ul.nav-menu > li > a[href*="admin"]{
+        padding-left: 50px;
+    }
 
 
 
@@ -320,7 +334,6 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
 
 div.wpforms-container-full .form-submit-commander[type="submit"]{
     width: 150px !important;
-    height: 45px;
     font-size: 13px;
 }
 
@@ -343,6 +356,15 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
         padding-bottom: 0px !important;
     }
 
+    button.menu-toggle{
+        width: 100px;
+    }
+
+    .main-navigation ul li{
+        text-align: left !important;
+    }
+
+    
     .nav-menu {
         flex-direction: column; /* Trasforma il menu in verticale */
         list-style: none;
@@ -350,27 +372,25 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
         position: absolute;
         top: 50px; /* Posiziona il menu sotto il pulsante */
         right: 0;
-        width: 100%;
-        z-index: 1000; /* Portalo sopra gli altri elementi */
+        width: 150px;
+        transition: 0.3s ease;
     }
 
     .custom-primary-menu li a[href*="commander"]{
         background-color: white;
         color: #000;
+        text-align: left;
     }
-
-    .main-navigation.toggled ul[aria-expanded="true"]{
-        width: 150px;
-    }
+    
 
     .custom-primary-menu li {
         margin-left: 0px;
     }
 
-    .main-navigation ul li a {
-        align-self: center;
+    .custom-primary-menu ul li a:hover {
+        background-color: #C02E44 !important; /* Colore di sfondo al passaggio del mouse */
     }
-
+   
 
 
     /* Page nous rencontrer */
