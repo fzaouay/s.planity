@@ -296,17 +296,33 @@ div.wpforms-container-full .wpforms-form .wpforms-title {
 
 .wpforms-container .wpforms-field.wpforms-one-half.wpforms-first {
     padding-right: 20px;
-    border-right: solid #fff !important;
+    position: relative;
+    
+
+}
+
+.wpforms-container .wpforms-field.wpforms-field-name.wpforms-one-half.wpforms-first::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 60%; /* Il bordo parte dalla metà in alto */
+    height: 100%; /* Il bordo copre solo la metà inferiore */
+    width: 2px; /* Spessore del bordo */
+    background-color: #fff; /* Colore del bordo */
 }
 
 .wpforms-container .wpforms-field.wpforms-one-half{
-    padding-right: 20px;
+    padding-left: 20px !important;
+    margin-left: 0px !important;
 }
 
 
 div.wpforms-container-full .wpforms-form .wpforms-submit-container{
-    margin-top: 20px !important;
-    padding-top: 30px;
+    padding-top: 30px
+}
+
+div.wpforms-container-full{
+    margin-top: 0px !important;
 }
 
 div.wpforms-container-full.form-commander .wpforms-form .wpforms-field-label{
@@ -349,7 +365,8 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
     div.wpforms-container-full .wpforms-form .wpforms-title{
         font-size: 25px;
     }
-   
+    
+    
 
 
 /* page commander */
@@ -361,6 +378,19 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
 
 .wpforms-container .wpforms-form .wpforms-field-label{
     font-size: 15px;
+}
+
+.elementor-125 .elementor-element.elementor-element-29c65b6 .elementor-heading-title{
+    text-align: start;
+}
+
+.wpforms-container .wpforms-field.wpforms-one-half.wpforms-first{
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+}
+
+.wpforms-container .wpforms-field.wpforms-one-half{
+    padding-right: 10px !important;
 }
 
 }
@@ -468,8 +498,8 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
         height: 35px;
     }
 
-      .wpforms-container .wpforms-field.wpforms-one-half.wpforms-first {
-        border-right: none !important;
+    .wpforms-container .wpforms-field.wpforms-field-name.wpforms-one-half.wpforms-first::before {
+        display: none !important;
     }
 
     .wpforms-container .wpforms-field.wpforms-one-half{
