@@ -227,16 +227,29 @@ main .elementor-element .elementor-element-4154153 {
     border-bottom-left-radius: 15px;
 }
 
-.wpforms-container .wpforms-field{
-    width: 600px;
+.wpforms-container input.wpforms-field-medium{
+    max-width: 100% !important;
 }
+
+.wpforms-container input.wpforms-field-medium {
+    width: 400px !important;
+}
+
+.wpforms-container .wpforms-field{
+    padding-left: 25px !important;
+}
+
 
 .wpforms-container .wpforms-form .wpforms-field-label{
     color: black !important;
 }
 
+.wpforms-container-full .wpforms-form textarea{
+    max-width: 100%;
+}
+
 div.wpforms-container-full .wpforms-form textarea{
-    width: 360px;
+    width: 400px;
     height: 200px !important;
 }
 
@@ -258,8 +271,6 @@ div.wpforms-container-full .wpforms-form .wpforms-title {
     font-size: 30px;
     color: var(--wpforms-label-color);
 }
-
-
 
 .wpforms-submit-container {
     text-align: center;
@@ -331,6 +342,13 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
 
     /* Page Nous Rencontrer */
 
+    .wpforms-container .wpforms-field{
+        padding-left: 20px !important;
+    }
+
+    div.wpforms-container-full .wpforms-form .wpforms-title{
+        font-size: 25px;
+    }
    
 
 
