@@ -329,6 +329,9 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
         padding-left: 50px;
     }
 
+    /* Page Nous Rencontrer */
+
+   
 
 
 /* page commander */
@@ -397,17 +400,29 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
     /* Page nous rencontrer */
 
     /* form */
+    div.wpforms-container-full .wpforms-form .wpforms-head-container{
+        padding-bottom: 20px;
+    }
+
     div.wpforms-container-full .wpforms-form .wpforms-title{
         font-size: 20px;
     }
 
     div.wpforms-container .wpforms-form .wpforms-field{
         width: 100% !important;
-        
+        padding-top: 0px;
     }
 
     .wpforms-container .wpforms-form .wpforms-field-label{
         font-size: 14px !important;
+    }
+
+    div.wpforms-container .wpforms-form .wpforms-field input.wpforms-field-medium{
+        height: 35px;
+    }
+
+    div.wpforms-container-full .wpforms-form textarea{
+        height: 100px !important;
     }
 
     div.wpforms-container-full button[type="submit"]{
@@ -430,6 +445,10 @@ div.wpforms-container-full .form-submit-commander[type="submit"]{
         width: 100% !important;  /* Quando lo schermo è piccolo, i campi diventano a piena larghezza */
         margin-right: 0; /* Rimuove il margine a destra */
       }
+
+    div.wpforms-container .wpforms-form .wpforms-field input{
+        height: 35px;
+    }
 
       .wpforms-container .wpforms-field.wpforms-one-half.wpforms-first {
         border-right: none !important;
